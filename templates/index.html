@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriNova | Smart Farming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="AgriNova home">🌿 <span>AgriNova</span></a>
+    <button class="nav-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navMenu" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="language">
+        <select id="languageSelect">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </div>
+      <a class="nav-login" href="login.html" data-i18n="navLogin">Login</a>
+      <a class="nav-signup" href="signup.html" data-i18n="navSignUp">Sign Up</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="left">
+        <p class="eyebrow" data-i18n="heroEyebrow">AI-POWERED FARMING</p>
+        <h1 data-i18n="heroTitle" data-i18n-html="true">Smarter Farming,<br>Stronger Tomorrow</h1>
+        <p data-i18n="heroText">AgriNova helps farmers make confident decisions with crop recommendations, fertilizer guidance, and practical AI support.</p>
+      </div>
+      <div class="right"><img src="assets/farmer.png" alt="Farmer using a tablet in a field"></div>
+    </section>
+
+    <section class="stats" aria-label="AgriNova statistics">
+      <div class="card"><h2>5+</h2><p data-i18n="statsFarmers">Farmers Registered</p></div>
+      <div class="card"><h2>5,000+</h2><p data-i18n="statsAdvisories">AI Advisories</p></div>
+      <div class="card"><h2>20+</h2><p data-i18n="statsCrops">Crop Options</p></div>
+      <div class="card"><h2>100%</h2><p data-i18n="statsFriendly">Farmer Friendly</p></div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="section-label" data-i18n="aboutLabel">ABOUT AGRINOVA</p>
+      <h2 data-i18n="aboutHeading">Tools for better farm decisions</h2>
+      <p data-i18n="aboutText">AgriNova brings crop recommendations, fertilizer guidance, and useful farming support into one simple platform.</p>
+    </section>
+
+    <section id="features" class="features">
+      <p class="section-label" data-i18n="featuresLabel">WHAT WE OFFER</p>
+      <h2 data-i18n="featuresHeading">Our Features</h2>
+      <div class="feature-container">
+        <article class="feature-card"><div class="feature-icon">🌱</div><h3 data-i18n="featureCrop">Crop Recommendation</h3><p data-i18n="featureCropText">Find crops that suit your soil, water availability, season, and temperature.</p></article>
+        <article class="feature-card"><div class="feature-icon">🧪</div><h3 data-i18n="featureFertilizer">Fertilizer Guidance</h3><p data-i18n="featureFertilizerText">Understand nutrient needs and get soil-aware fertilizer recommendations.</p></article>
+        <article class="feature-card"><div class="feature-icon">🤖</div><h3 data-i18n="featureAssistant">AI Assistant</h3><p data-i18n="featureAssistantText">Ask farming questions and receive clear, practical guidance anytime.</p></article>
+        <article class="feature-card"><div class="feature-icon">🎧</div><h3 data-i18n="featureSupport">Support</h3><p data-i18n="featureSupportText">Reach our team whenever you need help navigating the platform.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-intro">
+        <p class="section-label" data-i18n="contactLabel">GET IN TOUCH</p>
+        <h2 data-i18n="contactHeading">Contact Us</h2>
+        <p data-i18n="contactText">Have a farming question or need help with AgriNova? Our team is ready to help.</p>
+      </div>
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:agrinova@gmail.com"><span class="contact-icon">✉</span><span><strong data-i18n="contactEmail">Email us</strong><small>agrinova@gmail.com</small></span></a>
+        <a class="contact-card" href="tel:+14179435611"><span class="contact-icon">☎</span><span><strong data-i18n="contactCall">Call us</strong><small>+91 4179435611</small></span></a>
+        <div class="contact-card"><span class="contact-icon">⌖</span><span><strong data-i18n="contactVisit">Visit us</strong><small>Satna, Madhya Pradesh, India</small></span></div>
+      </div>
+    </section>
+  </main>
+  <footer><p data-i18n="footerText">© 2026 AgriNova · Smart Farming with AI</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

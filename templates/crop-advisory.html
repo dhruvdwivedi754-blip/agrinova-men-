@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Advisory | AgriNova</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="advisory-page tool-page">
+  <header class="topbar">
+    <a class="logo" href="home.html">🌿 AgriNova</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+    <ul class="menu" id="navMenu">
+      <li><a href="home.html">Home</a></li>
+      <li><a class="active" href="crop-advisory.html">Crop Advisory</a></li>
+      <li><a href="fertilizer.html">Fertilizer</a></li>
+      <li><a href="chatbot.html">AI Chatbot</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <div class="right-menu"><span class="profile">👤 <span id="username">Farmer</span></span></div>
+  </header>
+
+  <main class="advisory-main">
+    <section class="advisory-hero">
+      <a class="advisory-back" href="home.html">← Dashboard</a>
+      <p class="advisory-kicker">ML-POWERED CROP ADVISORY</p>
+      <h1>Find the crop that fits your farm</h1>
+      <p>Tell us about your local conditions and our model will recommend a suitable crop, with a clear explanation of the match.</p>
+    </section>
+
+    <section class="advisory-grid">
+      <div class="form-card advisory-form-card">
+        <div class="card-heading"><span>01</span><div><h2>Your farm conditions</h2><p>Choose the values that best describe your field.</p></div></div>
+        <form id="cropAdvisoryForm">
+          <div class="advisory-fields">
+            <div class="form-group"><label for="cropState">State or Union Territory</label><select id="cropState" required><option value="">Loading states…</option></select></div>
+            <div class="form-group"><label for="soilType">Soil type</label><select id="soilType" required><option value="">Loading soil types…</option></select></div>
+            <div class="form-group"><label for="season">Season</label><select id="season" required><option value="">Loading seasons…</option></select></div>
+            <div class="form-group"><label for="waterAvailability">Water availability</label><select id="waterAvailability" required><option value="">Loading water options…</option></select></div>
+            <div class="form-group advisory-full"><label for="temperature">Temperature range</label><input id="temperature" type="text" placeholder="Loading temperature ranges…" required></div>
+          </div>
+          <button type="submit" class="submit-btn advisory-submit">Get crop recommendation <span>→</span></button>
+        </form>
+      </div>
+
+      <aside class="result-card advisory-result-card" aria-live="polite">
+        <div class="card-heading"><span>02</span><div><h2>Your recommendation</h2><p>Personalized from your selected conditions.</p></div></div>
+        <div id="cropResultBox" class="crop-result-box">
+          <div class="result-empty"><span>🌾</span><h3>Ready when you are</h3><p>Complete the form to receive a crop recommendation and the reasoning behind it.</p></div>
+        </div>
+      </aside>
+    </section>
+
+    <p class="advisory-note">Recommendations support your planning. Confirm local soil conditions, seed availability, weather, and market demand before planting.</p>
+  </main>
+  <footer class="site-footer"><p>© 2026 AgriNova · Smart Farming with AI</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

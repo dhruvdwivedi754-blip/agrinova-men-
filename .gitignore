@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+.vscode/
+.ipynb_checkpoints/
+
+*.log
+.DS_Store
+Thumbs.db
+ml_assets/data/support_submissions.csv
